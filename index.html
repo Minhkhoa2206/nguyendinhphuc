@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+
+body {
+  background-color: black;
+}
+
+.container {
+  border: 2px solid red;
+  background-color: aqua;
+  width: 50%;
+  margin: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.info {
+  font-family: 'Be Vietnam', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+.facebook-button {
+  background-color: #1877f2;
+}
+
+.zalo-button {
+  background-color: white;
+}
+
+.tiktok-button {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/344088068_546072484273285_5403032521477254300_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=N6Llkgl0v-wAX__8V4D&_nc_oc=AQnDSVW3j5tjtxUSWL3sWDUNrEf0qdDNli1k_KphZHEIWEcVCRPDCZTSl4JyCH0Cl9Ir9tym8CuHE29O-1gzjdq4&_nc_ht=scontent.fdad3-4.fna&oh=00_AfCxU-Vd4BdoD5ITjIbkjSoHLQLdc6PaNtM-vzX8DbAN3A&oe=64622591" alt="Image" class="center" id="image" onclick="showInfo()">
+
+  <div id="info" class="hidden info">
+    <p>𝓝𝓪𝓶𝓮: 𝓝𝓰𝓾𝔂𝓮̂̃𝓷 Đ𝓲̀𝓷𝓱 𝓟𝓱𝓾́𝓬</p>
+    <p> 𝓓𝓪𝓽𝓮: 04 𝒕𝒉𝒂́𝒏𝒈 01 𝒏𝒂̆𝒎 2002 </p>
+    <p>🅢Đ🅣: ⓿➒⓿➎⓿➎➍➒➌➐</p>
+    <p> 𝔸𝕕𝕕𝕣𝕖𝕤𝕤:ℕ𝕀ℕℍ 𝕋ℝ𝕌ℕ𝔾 - ℕ𝕀ℕℍ ℍ𝕆̀𝔸 - 𝕂ℍ𝔸́ℕℍ ℍ𝕆̀𝔸</p>
+
+    <button class="facebook-button" onclick="window.location.href='https://www.facebook.com/nguyenphucninhtrung'">FACEBOOK</button>
+    <button class="zalo-button" onclick="window.location.href='https://zalo.me/0905054937'">ZALO</button>
+    <button class="tiktok-button" onclick="window.location.href='https://www.tiktok.com/@pphuc04012002?_t=8cDdENJ5J2H&_r=1'">TIKTOK</button>
+    <button onclick="window.location.href='https://sites.google.com/view/khoawebs'">TrangWeb</button>
+  </div>
+</div>
+
+<script>
+function showInfo() {
+  document.getElementById("image").style.display = "none";
+  document.getElementById("info").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
